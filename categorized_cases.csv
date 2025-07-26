@@ -1,0 +1,42 @@
+id,text,category,confidence,source
+1,"Despite multiple mediation sessions, the parties remain at an impasse regarding intellectual property rights, necessitating judicial intervention under Section 35B of the Commercial Code.",negotiable,56.15%,rules
+2,"Through facilitated dialogue, the licensor agreed to revised royalty structures with graduated payment thresholds tied to sales performance metrics.",negotiable,74.74%,model
+3,"The appellate court vacated the original judgment, remanding the matter for reconsideration of parol evidence regarding delivery timelines.",negotiable,57.36%,rules
+4,Stakeholders executed a memorandum of understanding allowing phased implementation of environmental compliance measures with bilateral inspection rights.,negotiable,67.06%,rules
+5,A writ of mandamus was issued compelling production of audited financial records pursuant to discovery obligations under FRCP Rule 34.,negotiable,62.17%,rules
+6,Post-dispute renegotiation yielded amended force majeure provisions incorporating pandemic-related supply chain contingencies.,negotiable,77.36%,model
+7,The Chancery Division granted interlocutory relief freezing assets pending determination of fraudulent conveyance allegations.,court,72.11%,model
+8,Cross-border arbitration under ICC Rules 2021 resulted in modified non-compete geographical restrictions and liquidated damages caps.,negotiable,77.10%,model
+9,Third Circuit precedent regarding implied covenant of good faith was cited in denying summary judgment motion on termination clauses.,negotiable,59.05%,rules
+10,Multi-party conciliation established escrow mechanisms for disputed payments with independent accounting verification protocols.,negotiable,69.56%,rules
+11,Judicial review confirmed statutory invalidity of unilateral modification clauses under Consumer Protection Act 2015.,negotiable,61.43%,rules
+12,Mediated settlement introduced earn-out provisions contingent upon EBITDA targets over 36-month transition period.,negotiable,61.82%,rules
+13,Supreme Court granted certiorari to address circuit split on parol evidence rule application to integrated SaaS agreements.,negotiable,63.65%,rules
+14,Bilateral side agreement negotiated sunset clauses for legacy liabilities with mutual release of claims post-implementation.,negotiable,74.38%,model
+15,Enforcement proceedings initiated under New York Convention for foreign arbitral award challenged via public policy exception.,negotiable,51.74%,rules
+16,Technical advisory panel appointed to resolve ambiguity in API licensing terms through binding expert determination.,negotiable,58.29%,rules
+17,Circuit Judge issued nationwide injunction against enforcement of unilateral termination clauses in franchise agreements.,negotiable,57.21%,rules
+18,Stakeholders adopted price review mechanism indexed to Producer Price Index with quarterly adjustment windows.,negotiable,63.59%,rules
+19,Tribunal applied CISG Article 79 to deny damages for force majeure event despite inadequate contractual definitions.,negotiable,58.86%,rules
+20,Renegotiated supply terms included hardship clause activation thresholds based on 20% input cost fluctuations.,negotiable,81.29%,model
+295,Special master appointed to oversee document production regarding alleged trade secret misappropriation in semiconductor patents.,negotiable,56.64%,rules
+296,Good-faith negotiations yielded alternative dispute resolution ladder clauses incorporating mediation-arbitration hybrid models.,negotiable,80.87%,model
+297,Federal Circuit affirmed injunctive relief against reverse engineering of API structures despite clean room design claims.,negotiable,59.41%,rules
+298,Post-M&A working group established dynamic pricing adjustment mechanisms indexed to commodity market fluctuations.,negotiable,69.67%,rules
+299,SCOTUS ruling clarified Article III standing requirements for data breach class actions involving speculative future harm.,negotiable,63.79%,rules
+301,The district court issued a writ of execution authorizing seizure of assets under FRCP Rule 69(a).,court,60.22%,rules
+302,Joint technical committee implemented adaptive quality control tolerances with monthly review cycles.,negotiable,78.57%,model
+303,Appellate panel reversed lower court's interpretation of liquidated damages clause.,negotiable,60.33%,rules
+304,Cross-license agreement amended to include royalty-free research exceptions.,negotiable,52.84%,rules
+305,Magistrate judge ordered forensic accounting of cryptocurrency transactions.,negotiable,55.20%,rules
+306,Supplier consortium adopted dynamic allocation formulas weighted by purchase volumes.,negotiable,63.44%,rules
+307,SCOTUS denied certiorari on forum selection clause validity.,negotiable,66.38%,rules
+308,Post-merger integration team codified earn-back provisions.,negotiable,57.48%,rules
+309,Federal jury found willful breach of fiduciary duty.,negotiable,58.64%,rules
+310,Mediation yielded staggered confidentiality tiers with time-bound schedules.,negotiable,62.64%,rules
+311,En banc rehearing granted to reconsider parol evidence exclusion.,negotiable,64.07%,rules
+312,Bilateral protocol established for force majeure notifications.,negotiable,53.50%,rules
+313,Receiver appointed to manage distressed assets.,negotiable,54.65%,rules
+314,Multi-stakeholder pact introduced hardship clauses.,negotiable,57.20%,rules
+315,Tribunal applied UNCITRAL Model Law to exclude evidence.,negotiable,57.01%,rules
+316,Renegotiated terms included EBITDA-based conversion ratios.,negotiable,84.82%,model
