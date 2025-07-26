@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: white;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background: #f1f1f1;
+        }
+        .negotiable {
+            color: green;
+            font-weight: bold;
+        }
+        .court {
+            color: red;
+            font-weight: bold;
+        }
+        .priority-high {
+            color: red;
+            font-weight: bold;
+        }
+        .priority-medium {
+            color: orange;
+            font-weight: bold;
+        }
+        .priority-low {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Classification Results</h2>
+
+    <!-- Negotiable Cases Table -->
+    <h3>Negotiable Cases</h3>
+    <table>
+        <tr>
+            <th>Text</th>
+            <th>Confidence</th>
+            <th>Source</th>
+            <th>Priority</th>
+        </tr>
+        <tr>
+            <td>Mutually agreed to settle the dispute without legal action.</td>
+            <td>92%</td>
+            <td class="negotiable">Model</td>
+            <td class="priority-low">Low</td>
+        </tr>
+        <tr>
+            <td>The two parties reached a mediated settlement.</td>
+            <td>87%</td>
+            <td class="negotiable">Model</td>
+            <td class="priority-medium">Medium</td>
+        </tr>
+    </table>
+
+    <!-- Court Cases Table -->
+    <h3>Court Cases</h3>
+    <table>
+        <tr>
+            <th>Text</th>
+            <th>Confidence</th>
+            <th>Source</th>
+            <th>Priority</th>
+        </tr>
+        <tr>
+            <td>The judge ruled in favor of the plaintiff.</td>
+            <td>95%</td>
+            <td class="court">Model</td>
+            <td class="priority-high">High</td>
+        </tr>
+        <tr>
+            <td>The motion was granted by the court.</td>
+            <td>90%</td>
+            <td class="court">Rules</td>
+            <td class="priority-high">High</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

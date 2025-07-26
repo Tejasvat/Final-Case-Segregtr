@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .results-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .negotiable-section, .court-section {
+            width: 48%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #555;
+        }
+
+        .case-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .case-table th, .case-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .case-table th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .priority {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Classification Results</h1>
+        <div class="results-section">
+            <div class="negotiable-section">
+                <h2>Negotiable Cases</h2>
+                <table class="case-table" id="negotiableTable">
+                    <thead>
+                        <tr>
+                            <th>Text</th>
+                            <th>Confidence</th>
+                            <th>Source</th>
+                            <th>Priority</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div class="court-section">
+                <h2>Court Cases</h2>
+                <table class="case-table" id="courtTable">
+                    <thead>
+                        <tr>
+                            <th>Text</th>
+                            <th>Confidence</th>
+                            <th>Source</th>
+                            <th>Priority</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Court cases will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Parse the data from the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const data = JSON.parse(decodeURIComponent(urlParams.get("data")) || []);
+
+        console.log("Parsed data:", data);
+
+        function populateTables(data) {
+            const negotiableTable = document.getElementById("negotiableTable").getElementsByTagName("tbody")[0];
+            const courtTable = document.getElementById("courtTable").getElementsByTagName("tbody")[0];
+
+            negotiableTable.innerHTML = "";
+            courtTable.innerHTML = "";
+
+            data.forEach(row => {
+                const confidence = parseFloat(row.confidence);
+                const priority = confidence >= 80 ? "High" : confidence >= 50 ? "Medium" : "Low";
+
+                const newRow = `
+                    <tr>
+                        <td>${row.text}</td>
+                        <td>${row.confidence}</td>
+                        <td>${row.source}</td>
+                        <td class="${priority === 'High' ? 'priority' : ''}">${priority}</td>
+                    </tr>
+                `;
+
+                if (row.category === "negotiable") {
+                    negotiableTable.insertAdjacentHTML("beforeend", newRow);
+                } else if (row.category === "court") {
+                    courtTable.insertAdjacentHTML("beforeend", newRow);
+                }
+            });
+        }
+
+        populateTables(data);
+    </script>
+</body>
+</html>
